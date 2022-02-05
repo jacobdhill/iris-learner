@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url(/img/bg.svg);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 5em 15em;
+}
+
+.input-container {
+  width: 240px;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+  display: block;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+img {
+  border-radius: 0.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 0.5em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+input {
+  background-color: #27282f;
+}
+
+button {
+  background-color: #388659;
+}
+
+form input:first-child {
+  margin-top: 1em;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: right;
+  align-self: flex-end;
+}
+
+.iris-container {
+  margin-top: 2em;
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+  width: 640px;
+}
+
+.iris-container .info {
+  padding-right: 2em;
+}
+
+.iris-container .info p {
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.entered-container,
+.percentage-container {
+  text-align: right;
+}

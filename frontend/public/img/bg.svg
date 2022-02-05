@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 508.00002 285.74999"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient2178">
+      <stop
+         style="stop-color:#388659;stop-opacity:1;"
+         offset="0"
+         id="stop2174" />
+      <stop
+         style="stop-color:#388659;stop-opacity:0;"
+         offset="1"
+         id="stop2176" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient2178"
+       id="linearGradient2180"
+       x1="663.62219"
+       y1="7.5942674"
+       x2="663.62219"
+       y2="331.8111"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0122661,0,0,1.0122661,-409.54818,-23.212342)" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#333745;fill-opacity:1;stroke-width:1.06665;stroke-linecap:round;stroke-linejoin:round"
+       id="rect846"
+       width="514.2312"
+       height="289.25504"
+       x="-3.115587"
+       y="-1.4690359" />
+    <path
+       id="path979"
+       style="opacity:1;fill:url(#linearGradient2180);fill-opacity:1;stroke:none;stroke-width:0.267828px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 432.99136,-1.4690418 C 374.09268,184.01681 156.66341,36.719399 -3.115449,252.90757 V 287.786 H 511.11574 V -1.4690418 Z" />
+  </g>
+</svg>
