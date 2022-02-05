@@ -15,11 +15,12 @@ body {
   background-size: cover;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  padding: 5em 15em;
+  padding: 1em 15em;
 }
 
 .input-container {
   width: 240px;
+  transform: translateY(4em);
 }
 
 input,
@@ -63,6 +64,7 @@ form input:first-child {
   display: flex;
   justify-content: right;
   align-self: flex-end;
+  transform: translateY(-4em);
 }
 
 .iris-container {

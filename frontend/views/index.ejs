@@ -12,11 +12,11 @@
       <div class="input-container">
         <h2>iris learner</h2>
         <p>please enter values below:</p>
-        <form>
-          <input type="text" placeholder="sepal length (cm)" />
-          <input type="text" placeholder="sepal width (cm)" />
-          <input type="text" placeholder="petal length (cm)" />
-          <input type="text" placeholder="petal width (cm)" />
+        <form method="post" action="/">
+          <input name="sepal_length" type="number" placeholder="sepal length (cm)" />
+          <input name="sepal_width" type="number" placeholder="sepal width (cm)" />
+          <input name="petal_length" type="number" placeholder="petal length (cm)" />
+          <input name="petal_width" type="number" placeholder="petal width (cm)" />
           <button type="submit">predict</button>
         </form>
       </div>
@@ -31,16 +31,12 @@
           <p><b>0.2 cm</b> petal width</p>
         </div>
         <div class="percentage-container">
-          <h1>89% sure it's an...</h1>
+          <h1><%= percentage %>% sure it's an...</h1>
         </div>
         <div class="iris-container">
           <div class="info">
-            <h2><u>iris setosa</u></h2>
-            <p>
-              Variable in stature, Iris setosa (Bristle-Pointed Iris) is a rhizomatous perennial forming a clump of
-              stiff, narrow, sword-like, mid-green leaves, 1-2 ft. long (30-60 cm), with a prominent midrib and a
-              purplish tinged base. The foliage arises from shallowly rooted, large, branching rhizomes forming clumps.
-            </p>
+            <h2><u><%= classification %> </u></h2>
+            <p><%= description %></p>
           </div>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Iris_setosa_2.jpg/847px-Iris_setosa_2.jpg"
