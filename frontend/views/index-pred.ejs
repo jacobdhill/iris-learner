@@ -21,6 +21,31 @@
         </form>
       </div>
     </div>
-    <div class="bottom-container"></div>
+    <div class="bottom-container">
+      <div class="results-container">
+        <div class="entered-container">
+          <p>You entered:</p>
+          <p><b><%= sepal_length %> cm</b> sepal length</p>
+          <p><b><%= sepal_width %> cm</b> sepal width</p>
+          <p><b><%= petal_length %> cm</b> petal length</p>
+          <p><b><%= petal_width %> cm</b> petal width</p>
+        </div>
+        <div class="percentage-container">
+          <h1><%= accuracy %>% sure it's an...</h1>
+        </div>
+        <div class="iris-container">
+          <div class="info">
+            <h2><u><%= prediction %> </u></h2>
+            <p><%= description %></p>
+          </div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Iris_setosa_2.jpg/847px-Iris_setosa_2.jpg"
+            alt="iris-setosa"
+            height="200"
+            width="200"
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>

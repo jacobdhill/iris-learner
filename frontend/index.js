@@ -1,3 +1,4 @@
+const { default: axios } = require("axios");
 const express = require("express");
 const app = express();
 
@@ -7,17 +8,33 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  const p = 80;
-  const c = "iris setosa";
-  const d =
-    "Variable in stature, Iris setosa (Bristle-Pointed Iris) is a rhizomatous perennial forming a clump of stiff, narrow, sword-like, mid-green leaves, 1-2 ft. long (30-60 cm), with a prominent midrib and a purplish tinged base. The foliage arises from shallowly rooted, large, branching rhizomes forming clumps.";
-
-  res.render("index", { percentage: p, classification: c, description: d });
+  res.render("index");
 });
 
 app.post("/", (req, res) => {
-  console.log(req.body);
-  res.redirect("/");
+  const { sepal_length, sepal_width, petal_length, petal_width } = req.body;
+
+  console.log({ sepal_length, sepal_width, petal_length, petal_width });
+
+  axios
+    .post("http://backend:5000/", {
+      sepal_length: sepal_length,
+      sepal_width: sepal_width,
+      petal_length: petal_length,
+      petal_width: petal_width,
+    })
+    .then((response) =>
+      res.render("index-pred", {
+        prediction: response.data.prediction,
+        accuracy: response.data.accuracy,
+        description: response.data.description,
+        sepal_length: sepal_length,
+        sepal_width: sepal_width,
+        petal_length: petal_length,
+        petal_width: petal_width,
+      })
+    )
+    .catch((error) => console.error(error));
 });
 
 app.listen(80);
