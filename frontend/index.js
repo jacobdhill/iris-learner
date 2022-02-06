@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
   const { sepal_length, sepal_width, petal_length, petal_width } = req.body;
 
-  console.log({ sepal_length, sepal_width, petal_length, petal_width });
+  //console.log({ sepal_length, sepal_width, petal_length, petal_width });
 
   axios
     .post("http://backend:5000/", {
