@@ -1,20 +1,11 @@
 from fastapi import FastAPI
 from ml.model import Model
+from ml.model import IrisInput
 
 app = FastAPI()
 
 
-@app.get("/")
-def index():
+@app.post("/")
+def index(iris_input: IrisInput):
     model = Model()
-
-    data = {
-        'sepal_length': 5.1,
-        'sepal_width': 3.5,
-        'petal_length': 1.4,
-        'petal_width': 0.2
-    }
-
-    return { 
-        'prediction': model.predict(data)
-    }
+    return model.predict(iris_input)
