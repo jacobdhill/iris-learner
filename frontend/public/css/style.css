@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url(/img/bg.svg);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 1em 15em;
+}
+
+.input-container {
+  width: 240px;
+  transform: translateY(4em);
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+  display: block;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #388659;
+  transition: all 0.5s ease-in-out;
+}
+
+p {
+  text-shadow: #0000003d 0px 3px 8px;
+}
+
+img {
+  border-radius: 0.5em;
+  box-shadow: #0000003d 0px 3px 8px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 0.5em;
+  text-shadow: #0000003d 0px 3px 8px;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  text-shadow: #0000003d 0px 3px 8px;
+}
+
+input {
+  background-color: #27282f;
+  box-shadow: #0000003d 0px 3px 8px;
+}
+
+button {
+  background-color: #388659;
+  box-shadow: #0000003d 0px 3px 8px;
+}
+
+form input:first-child {
+  margin-top: 1em;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: right;
+  align-self: flex-end;
+  transform: translateY(-4em);
+}
+
+.iris-container {
+  margin-top: 2em;
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+  width: 640px;
+}
+
+.iris-container .info {
+  padding-right: 2em;
+}
+
+.iris-container .info p {
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.entered-container,
+.percentage-container {
+  text-align: right;
+}

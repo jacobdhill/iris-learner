@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="input-container">
+        <h2>iris learner</h2>
+        <p>please enter values below:</p>
+        <form method="post" action="/">
+          <input name="sepal_length" type="number" step="0.01" placeholder="sepal length (cm)" required />
+          <input name="sepal_width" type="number" step="0.01" placeholder="sepal width (cm)" required />
+          <input name="petal_length" type="number" step="0.01" placeholder="petal length (cm)" required />
+          <input name="petal_width" type="number" step="0.01" placeholder="petal width (cm)" required />
+          <button type="submit">predict</button>
+        </form>
+      </div>
+    </div>
+    <div class="bottom-container"></div>
+  </body>
+</html>
